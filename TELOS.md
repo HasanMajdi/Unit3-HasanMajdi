@@ -14,3 +14,4 @@ The project is legal, and does not have any conflicts with laws/rules.
 The operations are welling to support the project and they asked for us to develop it. 
 
 **S - Scheduling -** Can the project be done in time?
+Yes, the developer is able to handle the project on the time required. 
