@@ -10,7 +10,7 @@ words = extract.split()
 
 print("number f words is {}".format(len(words)))
 ```
-###
+_______
 ```.py
 keywords = ['house', 'worker', 'master', 'hard']
 for key in keywords:
@@ -18,7 +18,7 @@ for key in keywords:
     print(key in words)
 ```
 
-###
+_______
 
 ```.py
 **( another way to print using f' )**
@@ -32,7 +32,7 @@ print(f'there are {num_letters} out of {leghtOfText} total characthers')
 
 print(extract.capitalize)
 ```
-###
+_______
 
 ```.py
 def checklen(x):
@@ -46,11 +46,11 @@ long_words = '#'.join(list(filter(lambda x: len(x) > 5, words)))
 totalSumPythonic = reduce(lambda a,b : ord(a)+b, extract)
 print(totalSumPythonic)
 ```
-### 
+_______ 
 ```.py
 totalSum = 0
 for l in extract:
     totalSum += ord(l)
 print(totalSum)
 ```
-###
+_______
