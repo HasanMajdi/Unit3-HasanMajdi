@@ -23,7 +23,7 @@ An email from the client (OEd Team), cleary what they wanted in the inventory fr
 
 ### Solution proposed
 As the client's problem requires a little bit more advanced coding, the developer decided to use Python programming language as a tool to develop this application, **python;** is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991. 
-the application will be a tool to make what the client requires happen, the program would allow the users to have a security system where all their data is secured and only accessible by specific members of the team, it will have 
+The application will be a tool to make what the client requires happen, the program would allow the users to have a security system where all their data is secured and only accessible by specific members of the team, it will store make the process of tracking equipments easier for the OEd team and to know to whom the equipments were lent for. 
 
 ### Success criteria 
 1. System can track the equipments lent. 
