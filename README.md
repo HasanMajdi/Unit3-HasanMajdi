@@ -19,7 +19,7 @@ Contents
 The client is the OUT DOOR EDUCATION program in UWC ISAK Japan, they have a list of equipment for hikes and out door trips, such as tents, rucksacks, sleeping bags, and sleeping mats. these items can be lend to hikers for OEd organized trips, but most of the time the OEd team can lost the items beause of the lack of a system that allows them to know to who the equipments were lent to. Therefore, the client is asking to develop a desktop application that allows the team to control their equipments in a more manageable way, that make finding the items easy and simple, and tracking what the items are and to whom they were lent to, provided with an email of the indivisual who has them, so they won't have to buy new equipments everytime they lose, and decrease their monthly budget, and be more Sustainable. 
 **fig.1** 
 ![Unit3-Inventory](OEdEmail.png)
-An email from the client (OEd Team), cleary what they want in the inventory from features.
+***An email from the client (OEd Team), cleary what they want in the inventory from features.***
 
 ### Solution proposed
 As the client's problem requires a little bit more advanced coding, the developer decided to use Python programming language as a tool to develop this application, **python;** is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991. 
