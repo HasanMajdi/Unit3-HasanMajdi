@@ -1,3 +1,4 @@
+```.py
 def is_prime_v1(n):
     """Return 'True' if 'n' is a prime number. False if not"""
     if n == 1:
@@ -18,3 +19,4 @@ def is_prime_v1(n):
         is_prime_v1()
     t1 = time.time()
     print("time required: ", t1 - t0)
+    ```
