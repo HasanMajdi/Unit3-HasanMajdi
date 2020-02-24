@@ -4,7 +4,7 @@ Unit 3 Project for Computer Science.
 OEd Items Inventory 
 ==========================
 An applictaion to track and identify the items exsists or lent in the OUT DOOR EDUCATION Program (OEd) in UWC ISAK Japan. 
-
+![Unit3-Inventory](Cover.png)
 Contents
 ---------
   1. [Planning](#planning)
