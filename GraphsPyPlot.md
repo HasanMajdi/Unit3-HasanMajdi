@@ -56,7 +56,60 @@ print('Average is :', calc / len(y))
 
 for i in range(1, 100):
     number = i
-```.py 
+```
 _______________________________
 3. 
+```.py 
+import matplotlib.pyplot as pyplot
+import random
 
+# y = []
+y = list()
+for x in range(1, 1001):
+    y.append(random.randint(1, 101))
+
+calc = 0
+for c in y:
+    calc += c
+print('Average is :', calc / len(y))
+
+number =[]
+for i in range(1, 1001):
+    number.append(i)
+
+z = [ p**2 for p in number]
+# define the parabola function
+# create graph
+pyplot.plot(number,z)
+# title for this graph
+pyplot.xlabel('x')
+pyplot.ylabel('$y= x^2$')
+# show the graph
+pyplot.show()
+```
+__________________
+4.
+```.py 
+import matplotlib.pyplot as pyplot
+import math
+
+min_x = -10
+max_x = 10
+step = 0.1
+num_points = int((max_x - min_x)/step)
+x = list()
+for k in range(num_points):
+    x.append(min_x + step*k)
+
+y = [math.sin(0.5 * n) for n in x]
+# define the parabola function
+z = [math.cos(0.5 * f) for f in x]
+# create graph
+pyplot.plot(y, z)
+# title for this graph
+pyplot.xlabel('y')
+pyplot.ylabel('z')
+# show the graph
+pyplot.show()
+```
+________________
