@@ -35,3 +35,12 @@ The application will be a tool to make what the client requires happen, the prog
 5. system has a search method to make it easier to find items. 
 6. items are categorised. 
 7. system is secured and only accessible by specific members.
+
+Development 
+------------
+**Qt Designer and GUI Applications "Pyqt5" **
+
+*What is Qt designer?*
+
+Qt Designer is the Qt tool for designing and building graphical user interfaces (GUIs) with Qt Widgets. it can compose and customize windows or dialogs in a what-you-see-is-what-you-get (WYSIWYG) manner, and test them using different styles and resolutions.
+
