@@ -27,6 +27,33 @@ The client is the OUT DOOR EDUCATION program in UWC ISAK Japan, they have a list
 The solution is to create an application where the client can have all the requirments done, the developer decided to use Python programming language as a tool to develop this application as it is an avaliable language that is free to use and has a lot of resources to learn from, also because the developler is learning it now and can get support at anytime, **python;** is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991. 
 for designing the application, we will be working on Qt Desinger combined with Python **(Pyqt5)** as it is an easy and avaliable tool to design and well documented. The application will be a tool to make what the client requires happen, the program would allow the users to have a security system where all their data is secured and only accessible by specific members of the team, it will store make the process of tracking equipments easier for the OEd team and to know to whom the equipments were lent for. 
 
+
+### Feasibility Study 
+
+**TELOS** is an acronym in project management used to define five areas of feasibility that determine whether
+a project should run or not. 
+
+**T - Technical** - Is the project technically possible?
+
+Yes, the project is possible in the tecnical part and the developers are able to create such a thing.
+__________________________________________________________________________________________________________________________
+**E - Economic -** Can the project be afforded? Will it increase profit?
+
+The project is affordable for the developers and does not require a budget.
+__________________________________________________________________________________________________________________________
+**L - Legal -** Is the project legal?
+
+The project is legal, and does not have any conflicts with laws/rules. 
+__________________________________________________________________________________________________________________________
+**O - Operational -** How will the current operations support the change?
+
+The operations are welling to support the project and they asked for us to develop it. 
+__________________________________________________________________________________________________________________________
+**S - Scheduling -** Can the project be done in time?
+
+Yes, the developer is able to handle the project on the time required. 
+__________________________________________________________________________________________________________________________
+
 ### Success criteria 
 1. System can track the equipments lent. 
 2. Be able to determine whether the equipments in the storage or lent out. 
