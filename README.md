@@ -38,8 +38,10 @@ The application will be a tool to make what the client requires happen, the prog
 
 Development 
 ------------
-**Qt Designer and GUI Applications "Pyqt5" **
+**Qt Designer and GUI Applications "Pyqt5"**
+
 ![Unit3-Inventory](python.png)
+
 *What is Qt designer?*
 
 Qt Designer is the Qt tool for designing and building graphical user interfaces (GUIs) with Qt Widgets. it can compose and customize windows or dialogs in a what-you-see-is-what-you-get (WYSIWYG) manner, and test them using different styles and resolutions.
