@@ -1,13 +1,24 @@
 1. 
-
+ ```.py 
+ s = input("Write something")
+d = 0
+l = 0
+for count in s:
+    if count.isdigit():
+        d = d + 1
+    elif count.isalpha():
+        l = l + 1
+    else:
+        pass
+print("Letters", l)
+print("Digits", d)
+```
 
 2. 
-
-```.py 
+```.py
 n = int(input("Enter the numbers"))
 number = dict()
 for i in range(1, n+1, 1):
-    number[i] = i**2
-``` 
-
+    number[i] = i**20 
+    ``` 
   
