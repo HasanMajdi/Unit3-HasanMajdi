@@ -13,6 +13,8 @@ Q2. Construct a truth table for the following Boolean expression.
 |1 | 1 | 0 | 
 -----------
 
+![Unit3-Inventory](Truth.jpg)
+
 ---------------
 Q3. Define the term protocol.
 A protocol is a standard set of rules that allow electronic devices to communicate with each other. 
