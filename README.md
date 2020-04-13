@@ -80,9 +80,12 @@ One of the simplest ways to start designing an application/website is to paper p
 
 **Fig.1**![Unit3-Inventory](Proto.jpg)
 
+
 **Fig.1** is showing the first design for the OEd inventory, it is showing the Login secure page. 
 
+
 **Fig.2**![Unit3-Inventory](Proto2.jpg)
+
 
 **Fig.2** is showing the mainpage for the inventory, here is where the user woill get the news about the inventory and about the items lent. 
 
