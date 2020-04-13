@@ -74,4 +74,15 @@ Development
 
 Qt Designer is the Qt tool for designing and building graphical user interfaces (GUIs) with Qt Widgets. it can compose and customize windows or dialogs in a what-you-see-is-what-you-get (WYSIWYG) manner, and test them using different styles and resolutions. 
 
+### First design; paper-prototype : 
+
+One of the simplest ways to start designing an application/website is to paper prototype. which means sketching it on a paper and try to combine ideas and put them down, one of its features is that it is easy to edit, so if the client changes their mind about the elements, you can easily edit it. it helps having an idea about the work before you acctually step over and design it.
+
+**Fig.1**![Unit3-Inventory](Proto.jpg)
+
+**Fig.1** is showing the first design for the OEd inventory, it is showing the Login secure page. 
+
+**Fig.2**![Unit3-Inventory](Proto2.jpg)
+
+**Fig.2** is showing the mainpage for the inventory, here is where the user woill get the news about the inventory and about the items lent. 
 
