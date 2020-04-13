@@ -62,7 +62,7 @@ ________________________________________________________________________________
 5. system has a search method to make it easier to find items. 
 6. items are categorised. 
 7. system is secured and only accessible by specific members.
-
+8. Client should be satisfied about the application and have their requirments done. 
 Development 
 ------------
 **Qt Designer and GUI Applications "Pyqt5"**
