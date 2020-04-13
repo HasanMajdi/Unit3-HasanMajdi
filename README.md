@@ -66,15 +66,8 @@ ________________________________________________________________________________
 
 Development 
 ------------
-**Qt Designer and GUI Applications "Pyqt5"**
 
-![Unit3-Inventory](python.png)
-
-*What is Qt designer?*
-
-Qt Designer is the Qt tool for designing and building graphical user interfaces (GUIs) with Qt Widgets. it can compose and customize windows or dialogs in a what-you-see-is-what-you-get (WYSIWYG) manner, and test them using different styles and resolutions. 
-
-### First design; paper-prototype : 
+### Design; paper-prototype : 
 
 One of the simplest ways to start designing an application/website is to paper prototype. which means sketching it on a paper and try to combine ideas and put them down, one of its features is that it is easy to edit, so if the client changes their mind about the elements, you can easily edit it. it helps having an idea about the work before you acctually step over and design it.
 
@@ -89,3 +82,18 @@ One of the simplest ways to start designing an application/website is to paper p
 
 **Fig.2** is showing the mainpage for the inventory, here is where the user woill get the news about the inventory and about the items lent. 
 
+
+### Design; Qt Designiner : 
+
+**Qt Designer and GUI Applications "Pyqt5"**
+
+![Unit3-Inventory](python.png)
+
+*What is Qt designer?*
+
+Qt Designer is the Qt tool for designing and building graphical user interfaces (GUIs) with Qt Widgets. it can compose and customize windows or dialogs in a what-you-see-is-what-you-get (WYSIWYG) manner, and test them using different styles and resolutions. 
+
+**After creating the paper-prototype, the meeting and going through it with the clients, we now have to make the paper prototype and actual application (User Interface), and will be developing with Qt designer and Python.**
+
+
+ 
