@@ -111,7 +111,7 @@ To convert we use this command:
 pyuic5 NameOfFile.ui -o NameOfFile.py
 ```
 ### Creating a python code that inherits from the Ui file that converted to python: 
-
+**Inheriting** is a good method to use a specififc class in the Ui file that was converted to python. it allows a class to have the same behavior as another class and extend that behavior to provide special action for specific needs.
 ```.py 
 import sys
 from PyQt5.QtCore import pyqtSlot
@@ -135,5 +135,54 @@ widget.show() # shows the Ui
 sys.exit(app.exec_()) # Exit the app
 
 ```
+## Login Window: 
 
+The login window is the first window of the application where the user entres their name and password. as long as the client requires that specific members only can access the inventory who are the OEd team, we do not need a registeration window. 
+this help us to success the criteria 7 "System is secure and accessed only by specific members". 
+
+ ```.py 
+ 
+ user = "Lydia" 
+password = "Lydia"
+welcome = "Hello User"
+
+
+class Loginpage(Ui_Dialog):
+    def __init__(self, parent=None):
+        super(Loginpage, self).__init__(parent)
+        self.setupUi(self)
+
+        self.login_btn.clicked.connect(self.retrieveText) ## when the Login button is clickced, the code goes to this function which is retrieveText
+
+    def retrieveText(self):
+        print("Button was cliked")
+        # checks the password and email
+        email = self.lineEdit.text()
+        print('email entered=', email)
+        if email == "": ## if the email is empty, the borders color turns to red.
+            self.lineEdit.setStyleSheet("#lineEdit{\n"
+                                        "border: 2px solid;\n"
+                                        "border-color: red;\n"
+                                        "}")
+        else:
+            self.lineEdit.setStyleSheet("#lineEdit{\n"
+                                        "border: 3px solid;\n"
+                                        "border-color: green;\n"
+                                        "}")
+        # if the email is empty raise a warning
+        entered_pass = self.lineEdit_2.text()
+        if password == entered_pass:
+            print("Login corerct")
+            self.done(0)
+
+
+
+        else:
+            self.lineEdit.setStyleSheet("#lineEdit{\n"
+                                        "border: 3px solid;\n"
+                                        "border-color: red;\n"
+                                        "}")
+            print("Wrong password")
+            
+```
  
