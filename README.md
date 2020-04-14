@@ -185,4 +185,12 @@ class Loginpage(Ui_Dialog):
             print("Wrong password")
             
 ```
- 
+
+**Fig.5** ![Unit3-Inventory](Login1.png)
+
+**Fig.5**: is showing the window at the beggining without entering anything. 
+
+**Fig.6** ![Unit3-Inventory](LoginF.png)
+
+**Fig.6**: is showing when the user enters a wrong User name and password, as shwoing in the code, it will turn red and will print a message saying that it is a wrong password. 
+
