@@ -125,9 +125,15 @@ class Main(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(Main, self).__init__(parent) # super is the main class
         self.setupUi(self) ## the parent classes are the UI MainWindow which created in QtDesigner, and the general class QMainWindow from PyQT
+``` 
+## Code to start the app:
+
+```.py
+app = QApplication(sys.argv) # Creates an application. 
+widget = Loginpage() # Creates an object of the class. 
+widget.show() # shows the Ui 
+sys.exit(app.exec_()) # Exit the app
 
 ```
-
-
 
  
