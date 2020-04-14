@@ -95,5 +95,39 @@ Qt Designer is the Qt tool for designing and building graphical user interfaces 
 
 **After creating the paper-prototype, the meeting and going through it with the clients, we now have to make the paper prototype and actual application (User Interface), and will be developing with Qt designer and Python.**
 
+**Fig.3** ![Unit3-Inventory](Login.png)
+
+**Fig.3**: designing Login user interface on Qt Designer
+
+**Fig.4** ![Unit3-Inventory](Main.png)
+
+**Fig.4**: The Main page design on Qt Designer 
+
+### Converting the UI file to python file: 
+After saving the file in the desktop, we drag it to the Pycharm's project folder. 
+Now, we convert the UI file to a python file so we can start creating classes and inherit from the file. 
+To convert we use this command: 
+```.py 
+pyuic5 NameOfFile.ui -o NameOfFile.py
+```
+### Creating a python code that inherits from the Ui file that converted to python: 
+
+```.py 
+import sys
+from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow # importing liberies 
+from FileName import Class_Name # inheriting a class from the converted file
+from logIn import Ui_Dialog # an Ex. inheriting a class from the file 
+
+# Creating a class Initializer that inherits from the UI we created in QtDesigner after converting it. 
+
+class Main(QMainWindow, Ui_MainWindow):
+    def __init__(self, parent=None):
+        super(Main, self).__init__(parent) # super is the main class
+        self.setupUi(self) ## the parent classes are the UI MainWindow which created in QtDesigner, and the general class QMainWindow from PyQT
+
+```
+
+
 
  
