@@ -99,7 +99,7 @@ Qt Designer is the Qt tool for designing and building graphical user interfaces 
 
 **Fig.3**: designing Login user interface on Qt Designer
 
-**Fig.4** ![Unit3-Inventory](Main.png)
+**Fig.4** ![Unit3-Inventory](MainPage.png)
 
 **Fig.4**: The Main page design on Qt Designer 
 
