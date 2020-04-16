@@ -194,3 +194,5 @@ class Loginpage(Ui_Dialog):
 
 **Fig.6**: is showing when the user enters a wrong User name and password, as shwoing in the code, it will turn red and will print a message saying that it is a wrong password. 
 
+### Main Window 
+This window is where the client will be seeing the news for the inventory, what is being lent out and to whom, the date, email of the lender, and all information to keep tracking of the items. 
