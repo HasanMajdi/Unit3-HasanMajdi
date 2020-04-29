@@ -196,3 +196,16 @@ class Loginpage(Ui_Dialog):
 
 ### Main Window 
 This window is where the client will be seeing the news for the inventory, what is being lent out and to whom, the date, email of the lender, and all information to keep tracking of the items. 
+
+**Fig. 7** ![Unit3-Inventory](Mian.png)
+
+As we can see in **Fig. 7** is showing the main window with the information about the items and the date the action happened. 
+
+### Data Base 
+In the main window, we have the table where information will be showing for the inventory, and inorder to show the data, a Data Base should be created, the Data base is going to be a CSV file (Comma-separated values).           
+**Why CSV?** 
+1. CSV is a simple file format used to store data, such as a spreadsheet or in our case a Database. They mostly use the comma character to delimit data, it is also possible to open CSV files in spreadsheet programs (Like numbers in Mac), which make them easier to read.
+2. CSV files are readable and easy to edit manually.
+3. CSV files are simple to implement and parse.
+4. CSV files are processed by a lot of applications including Qt Designer which is the application used to develop this project.
+5. CSV files are small in size.
