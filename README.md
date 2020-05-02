@@ -197,7 +197,7 @@ class Loginpage(Ui_Dialog):
 ### Main Window 
 This window is where the client will be seeing the news for the inventory, what is being lent out and to whom, the date, email of the lender, and all information to keep tracking of the items. 
 
-**Fig. 7** ![Unit3-Inventory](Mian.png)
+**Fig. 7** ![Unit3-Inventory](Main.png)
 
 As we can see in **Fig. 7** is showing the main window with the information about the items and the date the action happened. 
 
