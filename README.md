@@ -56,12 +56,12 @@ ________________________________________________________________________________
 
 ### Success criteria 
 1. System can track the equipments lent. 
-2. Be able to determine whether the equipments in the storage or lent out. 
-3. Be able to identify who is the person that the equipment lent to and provide an email. 
-4. items can be removed or added.  
+2. system is secured and only accessible by specific members. 
+3. items can be removed or added. 
+4. items are categorised.
 5. system has a search method to make it easier to find items. 
-6. items are categorised. 
-7. system is secured and only accessible by specific members.
+6. Be able to determine whether the equipments in the storage or lent out. 
+7. Be able to identify who is the person that the equipment lent to and provide an email. 
 8. Client should be satisfied about the application and have their requirments done.
 
 Development 
@@ -209,3 +209,56 @@ In the main window, we have the table where information will be showing for the 
 3. CSV files are simple to implement and parse.
 4. CSV files are processed by a lot of applications including Qt Designer which is the application used to develop this project.
 5. CSV files are small in size.
+
+### Password and Secure Log in System 
+
+As One of the requirements for the Application (Criteria 2 "system is secured and only accessible by specific members.") We are going to create system that allows only specific members to have access to the inventory, (People who are members of the OEd Team). and for that, I have created to two methods with different levels of security. 
+
+**Method_1** 
+Having the Password and User name stored in the code: 
+```.py
+user = "Lydia" 
+password = "12345678"
+
+```
+Then having a Checking function that would check wheather the username and the password enterd by the user is the same as the ones stored in the variables. 
+
+```.py 
+
+def retrieveText(self):
+        print("Button was cliked")
+        # checks the password and email
+        email = self.lineEdit.text()
+        print('email entered=', email)
+        if email == "": ## if the email is empty, the borders color turns to red.
+            self.lineEdit.setStyleSheet("#lineEdit{\n"
+                                        "border: 2px solid;\n"
+                                        "border-color: red;\n"
+                                        "}")
+        else:
+            self.lineEdit.setStyleSheet("#lineEdit{\n"
+                                        "border: 3px solid;\n"
+                                        "border-color: green;\n"
+                                        "}")
+        # if the email is empty raise a warning
+        entered_pass = self.lineEdit_2.text()
+        if password == entered_pass:
+            print("Login corerct")
+            self.done(0)
+
+
+
+        else:
+            self.lineEdit.setStyleSheet("#lineEdit{\n"
+                                        "border: 3px solid;\n"
+                                        "border-color: red;\n"
+                                        "}")
+            print("Wrong password")
+```
+This method is working and we can login and see the inventory, also, it might work for such a project since the using of the app is going to be limited for around 7 to 10 people. the problem with the method is the security, it is not secure, and any one who opens the code can see the password and the username easily, and for that reason, we are using Method 2 as a better method for the application that can make the security better and can help success Criteria 2. 
+
+**Method_2** 
+Here we will be using a Hash to provide more security to the Login System, **A Hash** is Just like a fingerprint for data, it is a sequance of numbers and signs. 
+ - The same data has the same Hash it never changes. 
+ - The amount of data does not matter, we're always gonna get the same amount of characters. 
+ 
