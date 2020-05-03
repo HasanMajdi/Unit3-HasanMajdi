@@ -262,3 +262,4 @@ Here we will be using a Hash to provide more security to the Login System, **A H
  - The same data has the same Hash it never changes. 
  - The amount of data does not matter, we're always gonna get the same amount of characters. 
  
+ 
