@@ -94,6 +94,7 @@ One of the simplest ways to start designing an application/website is to paper p
 Qt Designer is the Qt tool for designing and building graphical user interfaces (GUIs) with Qt Widgets. it can compose and customize windows or dialogs in a what-you-see-is-what-you-get (WYSIWYG) manner, and test them using different styles and resolutions. 
 
 **After creating the paper-prototype, the meeting and going through it with the clients, we now have to make the paper prototype and actual application (User Interface), and will be developing with Qt designer and Python.**
+for the coding part, i will go step by step to explain how evrything is put together, how the application works and why do we use it. and indeed, show some of the computational thinking skills i have gained through out the whole proccess of developing this application.
 
 **Fig.3** ![Unit3-Inventory](Login.png)
 
@@ -308,7 +309,8 @@ log = Loginpage(self)
         log.show()
 ```
 The class **Loginpage** is connected to the function ``` try_login ``` when pressing the ```login_btn```, we use self. with ```try_login``` function because it belongs to the class **Loginpage**. 
-```
+
+```.py
 class Loginpage(Ui_login):
     def __init__(self, parent=None):
         super(Loginpage, self).__init__(parent)
@@ -323,7 +325,7 @@ class Loginpage(Ui_login):
 
 **FULL CODE** 
 
-Here is the full code for the ```try_login``` Function and the Pseudcode applied (Hashing the password)
+Here is the full code for the ```try_login``` Function and the Pseudcode solved (Hashing the password)
 
 ```.py 
     def try_login(self):
@@ -361,3 +363,34 @@ Here is the full code for the ```try_login``` Function and the Pseudcode applied
                 print("Wrong password")
  ```
  
+*******Some Evidience that the code works*******
+
+**LOGIN NOT CORRECT:**
+
+When the password and username are not correct, the code should move to this case (*else* if), which is saying turn the borders color for the ```Username``` and ```Password``` to red and ```print``` a warning message. **Fig. 9**
+
+ ```.py 
+ # if not ; show an error , RED FRAME FOR BUTTONS
+            else:
+                self.Username.setStyleSheet("#Username{\n"
+                                            "border: 3px solid;\n"
+                                            "border-color: red;\n"
+                                            "}")
+                self.Password.setStyleSheet("#Password{\n"
+                                            "border: 3px solid;\n"
+                                            "border-color: red;\n"
+                                            "}")
+                print("Wrong password")
+ 
+```
+**Fig. 9** ![Unit3-Inventory](Wrongpass.png) 
+
+**LOGIN NOT CORRECT:**
+
+When the password and the username are entred correctly, the code should move to this case which is simply saying close the window (Class) 
+```.py
+      if Hash:
+         self.close()
+```
+
+
