@@ -449,9 +449,11 @@ In *Fig. 12* we see the tabel and when Revert is clicked, we get a message sayin
 **And this will helps us to success and meet criteria[6], which is stating "System is able to determine whether the equipments in the storage or lent out."**
 *We are able to update the (Dashboard) news with weather new items are lent or being restored again* 
 
-## Equipments Dialog
+## Equipment/Users Dialog
 
-Equipments Dialog is where the user would be able to find all information about the items, where are they, Are stored or not, if not then, to Whom it is lent to, and emails section is provided. The first action to happen in order to show the Dialog is Importing the Class from the file. 
+Equipment Dialog is where the user would be able to find all information about the items, where are they, Are stored or not, if not then, to Whom it is lent to, and emails section is provided. 
+***(Since the way the two dialogs are created, i have put both Equipment and Users in the same section to avoid showing the same part of the code i showed growth in previously.)***
+The first action to happen in order to show the Dialog is Importing the Class from the file. 
 
 ```.py
 from Equitable import Equi_Table
@@ -471,12 +473,12 @@ And then we create a function inside the Main Class. This function has ```.show(
         Eq = EqTable(self)
         Eq.show()
 ```
-The next step is to create a connection to the Main Class and the function, so when ```Equipments``` button is clicked, the code moves to the function we created to show the dialog ```EqApp``` and so on to the class.  
+The next step is to create a connection to the Main Class and the function, so when ```Equipment``` button is clicked, the code moves to the function we created to show the dialog ```EqApp``` and so on to the class.  
 
 ```.py
-        self.Equipments.clicked.connect(self.EqApp)
+        self.Equipment.clicked.connect(self.EqApp)
 ```
-Now, when clicking ```Equipments``` button, the Dialog should show up, it was pretty difficult to oranize all of that, espeacially after adding a lot of buttons, but still, i have managed to create the Back Button that would close the Dialog and move back to the previous window which is the Main Window. And the way this works is by creating a function inside the ```EqTable``` class. We will call it ```exit_Equi``` and inside it would contain ```.close()``` method. 
+Now, when clicking ```Equipment``` button, the Dialog should show up, it was pretty difficult to oranize all of that, espeacially after adding a lot of buttons, but still, i have managed to create the Back Button that would close the Dialog and move back to the previous window which is the Main Window. And the way this works is by creating a function inside the ```EqTable``` class. We will call it ```exit_Equi``` and inside it would contain ```.close()``` method. 
 
 ```.py 
     def exit_Equi(self):
@@ -490,3 +492,14 @@ And to make sure it works in the screenshot, i will add a small test to the code
 ```py 
         print("Btn is Clicked", self.Back_Eq.clicked.connect(self.exit_Equi))
 ```
+*******Some Evidience*******
+
+**Fig. 13** ![Unit3-Inventory](Equi.png) 
+
+In *Fig. 13* we see the Table with information section for the Equipment. 
+
+**Fig. 14** ![Unit3-Inventory](Us.png) 
+
+In *Fig. 14* we can see the table for Users with Email, and the House where they live. 
+
+**And this will helps us to success and meet criteria[3] which stating "items can be removed or added." and criteria[7], which stating "Be able to identify who is the person that the equipment lent to and provide an email."**
