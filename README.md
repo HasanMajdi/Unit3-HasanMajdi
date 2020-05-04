@@ -10,10 +10,9 @@ An applictaion to track and identify the items exsists or lent in the OUT DOOR E
 Contents
 ---------
   1. [Planning](#planning)
-  2. [SolutionOverview](#SolutionOverview)
-  3. [Development](#development)
-  4. [Evaluation](#evaluation)
-  5. [References](#References)
+  2. [Development](#development)
+  3. [Evaluation](#evaluation)
+  4. [References](#References)
   
   Planning
 ----------
@@ -507,4 +506,16 @@ In *Fig. 14* we can see the table for Users with Email, and the House where they
 Evaluation
 -----------
 In this section we will be looking at the evaluation of the app as a whole and looking at how can we improve it.
+
+
+
+
+
+
+
+
+
+
+References
+----------
 
