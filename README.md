@@ -297,12 +297,30 @@ def verify_password(stored_password, passEntered):
  ```
 Here is the second function of the code ``` verify_password ```  Given an encoded password and a plain text one is provided by the user, it verifies whether the provided password matches the encoded one or not. 
 
-# In my code: 
+# In the code: 
 In the main file of the application ``` MAIN.py ``` i have imported these two functions``` hash_password ```and``` verify_password ```from a file in the project Unit-3 called ```myLib.py``` which has the code above for hashing the Password and the Username. 
 ```.py 
 from myLib import verify_password, hash_password
-``` . 
+```
+Then we use this variable to move to the LoginPage class and show it.
+```.py 
+log = Loginpage(self)
+        log.show()
+```
+The class **Loginpage** is connected to the function ``` try_login ``` when pressing the ```login_btn```, we use self. with ```try_login``` function because it belongs to the class **Loginpage**. 
+```
+class Loginpage(Ui_login):
+    def __init__(self, parent=None):
+        super(Loginpage, self).__init__(parent)
+        self.setupUi(self)
+        self.login_btn.clicked.connect(self.try_login)
+```
+**try_login function:** for this part of the development, we got the Pseudocode for the function from Dr.Ruben and we were asked to code it ourselves. 
  
+**Fig. 8** ![Unit3-Inventory](Pseudocode.png) 
 
- 
+*Fig. 8:* is showing the **Pseudocode** which is basiclly the steps or simply a way of describing a set of instructions that does not have to use specific syntax or langugae. 
+
+
+
  
