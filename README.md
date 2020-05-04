@@ -321,6 +321,43 @@ class Loginpage(Ui_login):
 
 *Fig. 8:* is showing the **Pseudocode** which is basiclly the steps or simply a way of describing a set of instructions that does not have to use specific syntax or langugae. 
 
+**FULL CODE** 
 
+Here is the full code for the ```try_login``` Function and the Pseudcode applied (Hashing the password)
 
+```.py 
+    def try_login(self):
+        # Read the entred username
+        user = self.Username.text()
+        print('username entered=', user)
+        # Read the entred password
+        password = self.Password.text()
+        print('Password', password)
+        PassUSe = (user + password)
+        # Open the file with the passwords
+        with open('Output.csv') as Output_file:
+            # Read in the file
+            file = csv.reader(Output_file)
+            for f in file:
+                hsh = f
+            print(hsh)
+            # use the vertify_password function with the stored and given password
+            Hash = verify_password(hash_password(hsh[0]), PassUSe)
+            print(PassUSe)
+            print(Hash)
+            # if the password matches break the loop and close
+            if Hash:
+                self.close()
+            # if not ; show an error , RED FRAME FOR BUTTONS
+            else:
+                self.Username.setStyleSheet("#Username{\n"
+                                            "border: 3px solid;\n"
+                                            "border-color: red;\n"
+                                            "}")
+                self.Password.setStyleSheet("#Password{\n"
+                                            "border: 3px solid;\n"
+                                            "border-color: red;\n"
+                                            "}")
+                print("Wrong password")
+ ```
  
