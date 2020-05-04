@@ -215,13 +215,13 @@ In the main window, we have the table where information will be showing for the 
 As One of the requirements for the Application (Criteria 2 "system is secured and only accessible by specific members.") We are going to create system that allows only specific members to have access to the inventory, (People who are members of the OEd Team). and for that, I have created to two methods with different levels of security. 
 
 **Method_1** 
-Having the Password and User name stored in the code: 
+Having the Password and User name stored in variables the code it self: 
 ```.py
 user = "Lydia" 
 password = "12345678"
 
 ```
-Then having a Checking function that would check wheather the username and the password enterd by the user is the same as the ones stored in the variables. 
+Then having a Checking function that would check wheather the username and the password enterd by the user is the same as the ones stored in the variables or not, if not, the borders of both the USERNAME and the PASSWORD would change to red to show that the information entered was not correct. 
 
 ```.py 
 
@@ -255,11 +255,44 @@ def retrieveText(self):
                                         "}")
             print("Wrong password")
 ```
-This method is working and we can login and see the inventory, also, it might work for such a project since the using of the app is going to be limited for around 7 to 10 people. the problem with the method is the security, it is not secure, and any one who opens the code can see the password and the username easily, and for that reason, we are using Method 2 as a better method for the application that can make the security better and can help success Criteria 2. 
+This method is working and we can login and see the inventory, also, it might work for such a project since the using of the app is going to be limited for around 7 to 10 people. the problem with the method is the security, it is not secure, and any one who opens the code can see the password and the username easily, and for that reason, we are using **Method_2** as it gives a better solution for the application that can make the security improved, more advenced, and can help success Criteria 2. to the addition of that, it is going to be a great way of developing Computational thinking and have an experiance in how to maka a secure system that would also help in the process of creating the IA for IBDP.  
 
 **Method_2** 
-Here we will be using a Hash to provide more security to the Login System, **A Hash** is Just like a fingerprint for data, it is a sequance of numbers and signs. 
+Here we will be using a Hash to provide more security to the Login System, **A Hash** is Just like a fingerprint for data, it is a sequance of numbers and signs, that help us in this case to make the code more secure. 
  - The same data has the same Hash it never changes. 
  - The amount of data does not matter, we're always gonna get the same amount of characters. 
+ 
+```.py 
+import hashlib, binascii, os #here we are importing hash library and binascii
+
+
+def hash_password(password):
+    salt = hashlib.sha256(os.urandom(60)).hexdigest().encode('ascii') ## A hash with a size of 64 bytes, encode('ascii')
+    Converts the 64 bytes into 64 ascii text characters
+
+    pwdhash = hashlib.pbkdf2_hmac('sha512', password.encode('utf-8'),
+                                  salt, 100000) #Repeating the process to increase randomness.
+    pwdhash = binascii.hexlify(pwdhash) #Converts to a Hexadecimal string
+
+    return (salt + pwdhash).decode('ascii') #Returns a string with the salt first and then the hashed password
+```
+This is the first function of the code ```.py hash_password ```  and what it does is encode a provided password in a way that is safe to store on a database or file, it generates random salt that should be added to the password. 
+
+```.py 
+
+def verify_password(stored_password, passEntered):
+    salt = stored_password[:64] ##Recover the salt as the first 64 characters of the hash, because the first 64 are the
+    password
+    stored_password = stored_password[64:]
+    pwdhash = hashlib.pbkdf2_hmac('sha512',
+                                  passEntered.encode('utf-8'),
+                                  salt.encode('ascii'),
+                                  100000) #creating a hash with the recovered salt for the password given
+    pwdhash = binascii.hexlify(pwdhash).decode('ascii')
+    print(pwdhash)
+    return pwdhash == stored_password ##Boolean: if the stored password and the given password are the same, then the hashes will be the same, and the return value is True
+    
+ ```
+Here is the second function of the code ```.py verify_password ```  Given an encoded password and a plain text one is provided by the user, it verifies whether the provided password matches the encoded one or not. 
  
  
