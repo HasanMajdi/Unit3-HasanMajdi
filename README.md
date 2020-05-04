@@ -257,7 +257,7 @@ def retrieveText(self):
             print("Wrong password")
 ```
 
-This method is working and we can login and see the inventory, also, it might work for such a project since the using of the app is going to be limited for around 7 to 10 people. the problem with the method is the security, it is not secure, and any one who opens the code can see the password and the username easily, and for that reason, we are using **Method_2** as it gives a better solution for the application that can make the security improved, more advenced, and can help success Criteria 2. to the addition of that, it is going to be a great way of developing Computational thinking and have an experiance in how to maka a secure system that would also help in the process of creating the IA for IBDP.  
+This method is working and we can login and see the inventory, also, it might work for such a project since the using of the app is going to be limited for around 7 to 10 people. the problem with the method is the security, it is not secure, and any one who opens the code can see the password and the username easily, and for that reason, we are using **Method_2** as it gives a better solution for the application that can make the security improved, more advenced, and can help success Criteria[2] . to the addition of that, it is going to be a great way of developing Computational thinking and have an experiance in how to maka a secure system that would also help in the process of creating the IA for IBDP.  
 
 **Method_2** 
 Here we will be using a Hash to provide more security to the Login System, **A Hash** is Just like a fingerprint for data, it is a sequance of numbers and signs, that help us in this case to make the code more secure. 
@@ -298,7 +298,8 @@ def verify_password(stored_password, passEntered):
  ```
 Here is the second function of the code ``` verify_password ```  Given an encoded password and a plain text one is provided by the user, it verifies whether the provided password matches the encoded one or not. 
 
-# In the code: 
+## In the code: 
+
 In the main file of the application ``` MAIN.py ``` i have imported these two functions``` hash_password ```and``` verify_password ```from a file in the project Unit-3 called ```myLib.py``` which has the code above for hashing the Password and the Username. 
 ```.py 
 from myLib import verify_password, hash_password
@@ -392,5 +393,56 @@ When the password and the username are entred correctly, the code should move to
       if Hash:
          self.close()
 ```
+**And this will helps us to success and meet criteria[2] which is sying "system is secured and only accessible by specific members."**
+*A program will be sent to the client and they will run it to generate a Hash, and then it will be sent back to the developer so they will have their own password without the developer knowing.* 
 
+## Main Window's Table (Dashboard)
+As mentioned above, for the Dashboard table, we will be using ```.CSV``` DataBase file as a way to store the news for the inventory such as lending items and the date they were lent.
+
+```.py 
+    def load_data(self):
+        data = []
+        with open('db.csv') as mydatabase:
+            file = csv.reader(mydatabase, delimiter=",")
+            for i, row in enumerate(file):
+                for j, col in enumerate(row):
+                    print(col)
+                    data.append([i, j, col])
+                    self.Tabl_Items.setItem(i, j, QTableWidgetItem(col))
+                    self.Tabl_Items.cellChanged.connect(self.changeDB)
+        return data
+```
+Here we have to define a function in the Main Class, this function is ```load_data``` and what it does is that it opens the```.CSV```file with the information stored in it and reads them, then append to the Table. 
+
+**Edit and Delete**
+
+To Edit and Delete information from the file we first have to create a function inside the Main Class that would have behaviours to change what has been in file. The function's name would be ```ChangeDB```
+
+```.py 
+    def changeDB(self):
+        item = self.Tabl_Items.currentItem()  # clicking itme
+        row = self.Tabl_Items.currentRow()  # Clicking row
+        col = self.Tabl_Items.currentColumn()  # Clicking Col
+        # show the item in the terminal for debugging proccess
+        self.Revert_Main.setDisabled(False) #Revert_Main btn 
+        self.Confirm_Main.setDisabled(False) #Confirm_Main btn
+```
+This function would not work without connceting it to the Main Class, therefore, we use this behaviour to do so. 
+
+```.py
+        self.Tabl_Items.cellChanged.connect(self.changeDB)
+```
+*******Some Evidience that the code works*******
+
+**Fig. 10** ![Unit3-Inventory](Table.png) 
+
+In *Fig. 10* we see the Table with information from the ```.CSV``` file inside. 
+
+**Fig. 11** ![Unit3-Inventory](Confirm.png) 
+
+In *Fig. 11* we can see the Data entred and save to ```.CSV``` file printed. 
+
+**Fig. 12** ![Unit3-Inventory](Reload.png)
+
+In *Fig. 12* we see the tabel and when Revert is clicked, we get a message saying "Reload the table"
 
