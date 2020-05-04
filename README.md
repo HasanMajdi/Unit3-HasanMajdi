@@ -452,7 +452,7 @@ In *Fig. 12* we see the tabel and when Revert is clicked, we get a message sayin
 ## Equipment/Users Dialog
 
 Equipment Dialog is where the user would be able to find all information about the items, where are they, Are stored or not, if not then, to Whom it is lent to, and emails section is provided. 
-***(Since the way the two dialogs are created, i have put both Equipment and Users in the same section to avoid showing the same part of the code i showed growth in previously.)***
+***(Since the way the two dialogs are created, i have put both Equipment and Users in the same section to avoid showing the same part of the code i showed growth in previously. (Avoid DRY) )***
 The first action to happen in order to show the Dialog is Importing the Class from the file. 
 
 ```.py
@@ -503,3 +503,8 @@ In *Fig. 13* we see the Table with information section for the Equipment.
 In *Fig. 14* we can see the table for Users with Email, and the House where they live. 
 
 **And this will helps us to success and meet criteria[3] which stating "items can be removed or added." and criteria[7], which stating "Be able to identify who is the person that the equipment lent to and provide an email."**
+
+Evaluation
+-----------
+In this section we will be looking at the evaluation of the app as a whole and looking at how can we improve it.
+
