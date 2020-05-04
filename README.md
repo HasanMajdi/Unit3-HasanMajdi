@@ -446,3 +446,47 @@ In *Fig. 11* we can see the Data entred and save to ```.CSV``` file printed.
 
 In *Fig. 12* we see the tabel and when Revert is clicked, we get a message saying "Reload the table"
 
+**And this will helps us to success and meet criteria[6], which is stating "System is able to determine whether the equipments in the storage or lent out."**
+*We are able to update the (Dashboard) news with weather new items are lent or being restored again* 
+
+## Equipments Dialog
+
+Equipments Dialog is where the user would be able to find all information about the items, where are they, Are stored or not, if not then, to Whom it is lent to, and emails section is provided. The first action to happen in order to show the Dialog is Importing the Class from the file. 
+
+```.py
+from Equitable import Equi_Table
+```
+Then we craete the Class for the Dialog, we name it ```EqTable``` so it is easy to memorize.
+
+```.py
+class EqTable(Equi_Table):
+    def __init__(self, parent=None):
+        super(EqTable, self).__init__(parent)
+        self.setupUi(self)
+```
+And then we create a function inside the Main Class. This function has ```.show()``` method and Rerefer to the Previous Class for the Dialog ```EqTable```
+
+```.py 
+    def EqApp(self):
+        Eq = EqTable(self)
+        Eq.show()
+```
+The next step is to create a connection to the Main Class and the function, so when ```Equipments``` button is clicked, the code moves to the function we created to show the dialog ```EqApp``` and so on to the class.  
+
+```.py
+        self.Equipments.clicked.connect(self.EqApp)
+```
+Now, when clicking ```Equipments``` button, the Dialog should show up, it was pretty difficult to oranize all of that, espeacially after adding a lot of buttons, but still, i have managed to create the Back Button that would close the Dialog and move back to the previous window which is the Main Window. And the way this works is by creating a function inside the ```EqTable``` class. We will call it ```exit_Equi``` and inside it would contain ```.close()``` method. 
+
+```.py 
+    def exit_Equi(self):
+        self.close()
+```
+Then as a last step, we add a connection between the class and the function, when Back button is clicked, connect to function ```exit_Equi``` which has the ```self.close()``` method and will close the dialog. 
+```.py 
+   self.Back_Eq.clicked.connect(self.exit_Equi)
+```
+And to make sure it works in the screenshot, i will add a small test to the code. 
+```py 
+        print("Btn is Clicked", self.Back_Eq.clicked.connect(self.exit_Equi))
+```
