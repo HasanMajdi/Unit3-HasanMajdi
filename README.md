@@ -195,7 +195,7 @@ class Loginpage(Ui_Dialog):
 **Fig.6**: is showing when the user enters a wrong User name and password, as shwoing in the code, it will turn red and will print a message saying that it is a wrong password. 
 
 ### Main Window 
-This window is where the client will be seeing the news for the inventory, what is being lent out and to whom, the date, email of the lender, and all information to keep tracking of the items. 
+This is window design where the client will be seeing the news for the inventory, what is being lent out and to whom, the date, email of the lender, and all information to keep tracking of the items. 
 
 **Fig. 7** ![Unit3-Inventory](Main.png)
 
@@ -255,6 +255,7 @@ def retrieveText(self):
                                         "}")
             print("Wrong password")
 ```
+
 This method is working and we can login and see the inventory, also, it might work for such a project since the using of the app is going to be limited for around 7 to 10 people. the problem with the method is the security, it is not secure, and any one who opens the code can see the password and the username easily, and for that reason, we are using **Method_2** as it gives a better solution for the application that can make the security improved, more advenced, and can help success Criteria 2. to the addition of that, it is going to be a great way of developing Computational thinking and have an experiance in how to maka a secure system that would also help in the process of creating the IA for IBDP.  
 
 **Method_2** 
@@ -276,7 +277,7 @@ def hash_password(password):
 
     return (salt + pwdhash).decode('ascii') #Returns a string with the salt first and then the hashed password
 ```
-This is the first function of the code ```.py hash_password ```  and what it does is encode a provided password in a way that is safe to store on a database or file, it generates random salt that should be added to the password. 
+This is the first function of the code ``` hash_password ```  and what it does is encode a provided password in a way that is safe to store on a database or file, it generates random salt that should be added to the password. 
 
 ```.py 
 
@@ -290,9 +291,18 @@ def verify_password(stored_password, passEntered):
                                   100000) #creating a hash with the recovered salt for the password given
     pwdhash = binascii.hexlify(pwdhash).decode('ascii')
     print(pwdhash)
-    return pwdhash == stored_password ##Boolean: if the stored password and the given password are the same, then the hashes will be the same, and the return value is True
+    return pwdhash == stored_password ##Boolean: if the stored password and the given password are the same,
+    then the hashes will be the same, and the return value is True
     
  ```
-Here is the second function of the code ```.py verify_password ```  Given an encoded password and a plain text one is provided by the user, it verifies whether the provided password matches the encoded one or not. 
+Here is the second function of the code ``` verify_password ```  Given an encoded password and a plain text one is provided by the user, it verifies whether the provided password matches the encoded one or not. 
+
+# In my code: 
+In the main file of the application ``` MAIN.py ``` i have imported these two functions``` hash_password ```and``` verify_password ```from a file in the project Unit-3 called ```myLib.py``` which has the code above for hashing the Password and the Username. 
+```.py 
+from myLib import verify_password, hash_password
+``` . 
+ 
+
  
  
