@@ -385,7 +385,7 @@ When the password and username are not correct, the code should move to this cas
 ```
 **Fig. 9** ![Unit3-Inventory](Wrongpass.png) 
 
-**LOGIN NOT CORRECT:**
+**LOGIN CORRECT:**
 
 When the password and the username are entred correctly, the code should move to this case which is simply saying close the window (Class) 
 ```.py
