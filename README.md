@@ -321,7 +321,14 @@ class Loginpage(Ui_login):
         self.setupUi(self)
         self.login_btn.clicked.connect(self.try_login)
 ```
-**try_login function:** for this part of the development, we got the Pseudocode for the function from Dr.Ruben and we were asked to code it ourselves. 
+**try_login function:** for this part of the development, we got the Pseudocode for the function from Dr.Ruben and we were asked to code it ourselves as a task to develope and practice. 
+
+# Flow Chart for the code: 
+
+**Fig. ** ![Unit3-Inventory](Try_Diagram.png) 
+
+Here is the flow chart for the ```try_Login``` function
+
  
 **Fig. 8** ![Unit3-Inventory](Pseudocode.png) 
 
