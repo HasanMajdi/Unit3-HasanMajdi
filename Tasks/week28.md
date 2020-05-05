@@ -16,13 +16,13 @@ Q2. Construct a truth table for the following Boolean expression.
 |1 | 1 | 0 | 
 -----------
 
-| Input   |      Output    |  
-|----------|:-------------:|
-|A  | B | C |
-| 0 | 0 | 1 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 0 |
+| Input   |      Output    |  O    |
+|----------|:-------------:|------:|
+|A         | B             | C     |
+| 0        | 0             | 1     |
+| 0        | 1             | 0     |
+| 1        | 0             | 0     |
+| 1        | 1             | 0     |
 
 ![Unit3-Inventory](Truth.jpg)
 
