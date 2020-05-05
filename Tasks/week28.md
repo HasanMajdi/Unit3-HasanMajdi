@@ -36,3 +36,8 @@ and how data transfers are confirmed.
 **Q4.** Outline the role of the memory data register in the machine execution cycle. 
 These pieces of data allow the CPU to quickly 'fetch' and then 'decode' and then 'execute' the instuctions held in RAM
 that are part of a program, one instruction at a time.
+
+**Q5.** A code for representing colours is used, where each colour is stored using 7 bits. State the number of different colours that can be represented.
+
+128 colors can be represented 7x2 = 128
+
