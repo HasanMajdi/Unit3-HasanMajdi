@@ -8,12 +8,19 @@ Q2. Construct a truth table for the following Boolean expression.
 
 ---------------
 |input | output |
+----------------
 |A | B | C | 
 |0 | 0 | 1 | 
 |0 | 1 | 0 | 
 |1 | 0 | 0 | 
 |1 | 1 | 0 | 
 -----------
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
 
 ![Unit3-Inventory](Truth.jpg)
 
