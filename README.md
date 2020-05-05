@@ -507,14 +507,15 @@ Evaluation
 -----------
 In this section we will be looking at the evaluation of the app as a whole and looking at how can we improve it.
 
-
-
-
-
-
-
-
-
+| Success Criteria |                                                                                        | MET? | Evidence                                                                                                                                                                  |
+|:----------------:|----------------------------------------------------------------------------------------|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1                | The system can track the equipment lent.                                               | MET  | Yes, it can, by storing the email you can track for whom the items are lent to.  Check: Fig. 13, Fig. 14.                                                                 |
+| 2                | system is secured and only accessible by specific members.                             | MET | Yes, system is secured and only specific members can access.  Check: Fig. 9                                                                                               |
+| 3                | items can be removed or added.                                                         | MET | Items can be removed or added using Equipment Dialog.  Check: Fig. 13 and Fig. 11                                                                                         |
+| 4                | items are categorized.                                                                 | NO   | Since the time was hard to manage, I could not have this criterion done, However, I see that it is not a priority for the client and I think the app is good without it.  |
+| 5                | the system has a search method to make it easier to find items.                        | NO | It was not met, i started developing it but i did not finish, the time was a very effective matter                                                                        |
+| 6                | Be able to determine whether the equipment in the storage or lent out.                 | MET  | Yes, Application can detremine  Equipment stat.  Check: Fig. 13                                                                                                           |
+| 7                | Be able to identify who is the person that the equipment lent to and provide an email. | MET  | Yes, Application can link items lent to the person's Email.                                                                                                               |
 
 References
 ----------
