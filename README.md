@@ -54,14 +54,18 @@ Yes, the developer is able to handle the project on the time required.
 __________________________________________________________________________________________________________________________
 
 ### Success criteria 
-1. System can track the equipments lent. 
-2. system is secured and only accessible by specific members. 
-3. items can be removed or added. 
-4. items are categorised.
-5. system has a search method to make it easier to find items. 
-6. Be able to determine whether the equipments in the storage or lent out. 
-7. Be able to identify who is the person that the equipment lent to and provide an email. 
-8. Client should be satisfied about the application and have their requirments done.
+
+
+| No. | Success Criteria                                                                       |
+|:---:|----------------------------------------------------------------------------------------|
+| 1   | The system can track the equipment lent.                                               |
+| 2   | system is secured and only accessible by specific members.                             |
+| 3   | items can be removed or added.                                                         |
+| 4   | items are categorized.                                                                 |
+| 5   | the system has a search method to make it easier to find items.                        |
+| 6   | Be able to determine whether the equipment in the storage or lent out.                 |
+| 7   | Be able to identify who is the person that the equipment lent to and provide an email. |
+
 
 Development 
 ------------
