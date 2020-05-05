@@ -520,3 +520,4 @@ In this section we will be looking at the evaluation of the app as a whole and l
 References
 ----------
 
+1. Molina, Alessandro. “Hashing Passwords in Python.” Useful Code, 20 Sept. 2018, www.vitoshacademy.com/hashing-passwords-in-python/.
