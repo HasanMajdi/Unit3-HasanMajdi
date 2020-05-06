@@ -6,16 +6,6 @@ One of the most salient usability issues for the mobile Web is the limited scree
 
 Q2. Construct a truth table for the following Boolean expression. 
 
----------------
-|input | output |
-----------------
-|A | B | C | 
-|0 | 0 | 1 | 
-|0 | 1 | 0 | 
-|1 | 0 | 0 | 
-|1 | 1 | 0 | 
------------
-
 | Input   |      Output    |  O    |
 |----------|:-------------:|------:|
 |A         | B             | C     |
