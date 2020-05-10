@@ -528,6 +528,9 @@ In this section we will be looking at the evaluation of the app as a whole and l
 | 6                | Be able to determine whether the equipment in the storage or lent out.                 | MET  | Yes, Application can detremine  Equipment stat.  Check: Fig. 13                                                                                                           |
 | 7                | Be able to identify who is the person that the equipment lent to and provide an email. | MET  | Yes, Application can link items lent to the person's Email.                                                                                                               |
 
+# Final Submission Video: 
+_ https://drive.google.com/open?id=1hO5AmfxOYP_iRmCVYn2lQPAa4cGtyFDB
+
 References
 ----------
 
